@@ -11,7 +11,7 @@ const Contact = () => {
 
   return (
     <div>
-      <div className="bg-[#1b3b34] p-6 text-white">
+      <div className="text-[#1b3b34] p-6 bg-white">
         <div className="flex flex-col md:flex-row h-screen overflow-hidden">
           {/* Left: Google Maps */}
           <div className="w-full md:w-1/2 h-full mb-6 mt-14 md:mb-0">
@@ -26,7 +26,7 @@ const Contact = () => {
 
           {/* Right: Contact Information */}
           <div className="w-full  md:w-1/2 pl-6 mt-10 md:mt-0 flex flex-col justify-center">
-            <h2 className="text-xl font-medium mb-2 text-gray-100">
+            <h2 className="text-xl font-medium mb-2 text-[#1b3b34]">
               Information
             </h2>
             <h1 className="text-3xl font-semibold mb-4">Contact Us</h1>
@@ -35,7 +35,7 @@ const Contact = () => {
               contact details:
             </p>
             <div className="mb-4 flex items-center">
-              <div className="bg-white text-[#1b3b34] p-3 rounded-full mr-3">
+              <div className="text-white bg-[#1b3b34] p-3 rounded-full mr-3">
                 <FaMapMarkerAlt className="text-3xl" />
               </div>
               <div>
@@ -44,7 +44,7 @@ const Contact = () => {
               </div>
             </div>
             <div className="mb-4 flex items-center">
-              <div className="bg-white text-[#1b3b34] p-3 rounded-full mr-3">
+              <div className="text-white bg-[#1b3b34] p-3 rounded-full mr-3">
                 <FaPhone className="text-3xl" />
               </div>
               <div>
@@ -53,7 +53,7 @@ const Contact = () => {
               </div>
             </div>
             <div className="flex items-center">
-              <div className="bg-white text-[#1b3b34] p-3 rounded-full mr-3">
+              <div className="text-white bg-[#1b3b34] p-3 rounded-full mr-3">
                 <FaEnvelope className="text-3xl" />
               </div>
               <div>
