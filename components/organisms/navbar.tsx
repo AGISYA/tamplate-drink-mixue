@@ -1,4 +1,3 @@
-"use client";
 import { useState, useEffect, useRef } from "react";
 import { FaBars, FaTimes } from "react-icons/fa";
 import Link from "next/link";
@@ -37,17 +36,14 @@ const Navbar = () => {
     >
       <div className="container mx-auto flex justify-between items-center">
         {/* Logo Teks */}
-        <Link
-          href="/"
-          className="text-2xl font-bold hover:opacity-80 transition duration-200"
-        >
-          MyLogo
+        <Link href="/" className="hover:opacity-80 transition duration-200">
+          <img src="/images/logo1.png" alt="Logo" className="h-16" />
         </Link>
         {/* Menu Tengah */}
         <ul className="hidden md:flex space-x-6">
           <li>
             <Link
-              href="/"
+              href="#home"
               className="hover:text-gray-400 transition duration-200"
             >
               Home
@@ -55,7 +51,15 @@ const Navbar = () => {
           </li>
           <li>
             <Link
-              href="/menu"
+              href="#aboutus"
+              className="hover:text-gray-400 transition duration-200"
+            >
+              About Us
+            </Link>
+          </li>
+          <li>
+            <Link
+              href="#menu"
               className="hover:text-gray-400 transition duration-200"
             >
               Menu
@@ -63,18 +67,10 @@ const Navbar = () => {
           </li>
           <li>
             <Link
-              href="/contact"
+              href="#contact"
               className="hover:text-gray-400 transition duration-200"
             >
               Contact Us
-            </Link>
-          </li>
-          <li>
-            <Link
-              href="/store-location"
-              className="hover:text-gray-400 transition duration-200"
-            >
-              Store Location
             </Link>
           </li>
         </ul>
@@ -93,7 +89,7 @@ const Navbar = () => {
         <ul className="md:hidden mt-4 space-y-4 text-center bg-[#1b3b34] py-4 border-t border-gray-800">
           <li>
             <Link
-              href="/"
+              href="#home"
               className="block hover:text-gray-400 transition duration-200"
             >
               Home
@@ -101,7 +97,15 @@ const Navbar = () => {
           </li>
           <li>
             <Link
-              href="/menu"
+              href="#aboutus"
+              className="block hover:text-gray-400 transition duration-200"
+            >
+              About Us
+            </Link>
+          </li>
+          <li>
+            <Link
+              href="#menu"
               className="block hover:text-gray-400 transition duration-200"
             >
               Menu
@@ -109,18 +113,10 @@ const Navbar = () => {
           </li>
           <li>
             <Link
-              href="/contact"
+              href="#contact"
               className="block hover:text-gray-400 transition duration-200"
             >
               Contact Us
-            </Link>
-          </li>
-          <li>
-            <Link
-              href="/store-location"
-              className="block hover:text-gray-400 transition duration-200"
-            >
-              Store Location
             </Link>
           </li>
         </ul>

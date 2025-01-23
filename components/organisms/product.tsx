@@ -58,7 +58,7 @@ const Product = () => {
   return (
     <section className="py-16 text-center bg-white">
       <h2 className="text-3xl font-medium text-gray-600 mb-4">Menu Kami</h2>
-      <p className="text-lg text-gray-500 mx-auto mb-8 max-w-2xl">
+      <p className="md:text-lg text-xs text-gray-500 mx-auto p-3 mb-8 max-w-2xl">
         Nikmati pilihan menu kami yang terbuat dengan bahan-bahan terbaik dan
         rasa yang menggugah selera. Setiap hidangan disiapkan dengan penuh cinta
         dan perhatian agar memberikan pengalaman kuliner yang tak terlupakan.
@@ -72,13 +72,13 @@ const Product = () => {
               key={index}
               className="flex-shrink-0 w-64 sm:w-48 md:w-64 lg:w-64 xl:w-80 h-auto flex flex-col items-center justify-center "
             >
-              <div className="w-full h-64 overflow-hidden rounded-lg shadow-lg mb-4">
+              <div className="w-56 h-44 sm:w-40 sm:h-40 md:w-64 md:h-64 overflow-hidden rounded-lg shadow-lg mb-4">
                 <Image
                   src={product.imageSrc}
                   alt={product.alt}
                   className="w-full h-full object-cover"
-                  width={256} // Fixed width for consistency
-                  height={256} // Fixed height for consistency
+                  width={256} // Fixed width for desktop
+                  height={256} // Fixed height for desktop
                 />
               </div>
 
@@ -89,15 +89,6 @@ const Product = () => {
             </div>
           ))}
         </div>
-      </div>
-
-      <div className="mt-8">
-        <a
-          href="#"
-          className="inline-block px-8 py-3 text-lg font-semibold text-white bg-[#5b7f3e] rounded-lg hover:bg-[#5b7f5e] transition"
-        >
-          Lihat Semua Menu
-        </a>
       </div>
 
       <style jsx>{`
