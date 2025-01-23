@@ -11,7 +11,7 @@ import Product from "@/components/organisms/product";
 
 const Page = () => {
   return (
-    <div className="relative w-full bg-black text-white">
+    <div className="relative w-full bg-[#1b3b34] text-white">
       <Navbar />
       <section id="home">
         <Carousel />

@@ -1,11 +1,13 @@
 import { useState } from "react";
 import Image from "next/image";
 
+type MenuKey = "coffee" | "chocolate" | "others";
+
 export default function Home() {
-  const [selectedMenu, setSelectedMenu] = useState("coffee"); // Default menu is 'coffee'
+  const [selectedMenu, setSelectedMenu] = useState<MenuKey>("coffee"); // Default menu is 'coffee'
 
   // Data menu dengan gambar dan nama produk
-  const menuItems = {
+  const menuItems: Record<MenuKey, { name: string; img: string }[]> = {
     coffee: [
       { name: "Espresso", img: "/images/expreso.jpg" },
       { name: "Caramel Latte", img: "/images/caramel late.jpg" },

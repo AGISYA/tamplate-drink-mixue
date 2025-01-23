@@ -11,7 +11,7 @@ const Contact = () => {
 
   return (
     <div>
-      <div className="text-[#1b3b34] p-6 bg-white">
+      <div className="text-[#1b3b34] mt-10 md:mt-0 p-6 bg-white">
         <div className="flex flex-col md:flex-row h-screen overflow-hidden">
           {/* Left: Google Maps */}
           <div className="w-full md:w-1/2 h-full mb-6 mt-14 md:mb-0">
