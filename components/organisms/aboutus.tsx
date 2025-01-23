@@ -19,7 +19,7 @@ export default function About() {
         {/* Teks Deskripsi */}
         <div className="flex flex-col justify-center text-center md:text-left">
           <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-[#1b3b34] mb-4">
-            Selamat Datang di Ayu Ayu
+            Selamat Datang di STARBUCKS
           </h2>
           <p className="text-gray-600 leading-relaxed text-xs sm:text-base mb-4">
             Nikmati berbagai minuman segar berbahan alami yang diracik dengan
